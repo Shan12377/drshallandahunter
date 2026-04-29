@@ -1,0 +1,106 @@
+.section {
+  padding-block: 96px;
+  background: hsl(205, 30%, 9%);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* Left — review card */
+.reviewCard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 2rem;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.title {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  margin-bottom: 16px;
+}
+.body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.68);
+  margin-bottom: 24px;
+}
+.reviewImageWrap {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
+  position: relative;
+}
+.reviewImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.nameBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 34%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.97) 55%, rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+/* Right column */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.alsoTitle {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+/* Website list */
+.websiteList { display: flex; flex-direction: column; gap: 0; }
+.websiteRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s, padding-left 0.2s;
+}
+.websiteRow:hover {
+  color: var(--accent);
+  padding-left: 8px;
+}
+
+/* Positioning note */
+.positionNote {
+  background: rgba(var(--accent-teal-rgb), 0.06);
+  border: 1px solid rgba(var(--accent-teal-rgb), 0.15);
+  border-radius: 1.6rem;
+  padding: 24px;
+}
+.positionNoteKicker {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+  margin-bottom: 12px;
+}
+.positionNoteBody {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.62);
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; }
+}

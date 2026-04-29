@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#050c14"/>
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="#080f1a" stroke="rgba(100,140,220,0.15)" stroke-width="1"/>
+  <circle cx="400" cy="220" r="90" fill="none" stroke="rgba(100,160,255,0.2)" stroke-width="1"/>
+  <circle cx="400" cy="220" r="60" fill="none" stroke="rgba(100,160,255,0.15)" stroke-width="1"/>
+  <circle cx="400" cy="220" r="30" fill="rgba(80,120,220,0.3)"/>
+  <polygon points="390,205 420,220 390,235" fill="rgba(150,190,255,0.8)"/>
+  <text x="400" y="360" text-anchor="middle" font-family="serif" font-size="22" fill="rgba(255,255,255,0.7)">ClinMotion</text>
+  <text x="400" y="385" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(100,160,255,0.6)">AI Medical Animation</text>
+  <text x="400" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.3)">Add ClinMotion screenshot</text>
+</svg>

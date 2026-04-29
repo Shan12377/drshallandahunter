@@ -1,0 +1,116 @@
+.section {
+  position: relative;
+  padding-block: 96px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* CDN backdrop */
+.backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.backdropImg {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.62;
+}
+.backdropOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6,16,21,0.88), rgba(6,16,21,0.96));
+}
+
+/* Glassmorphism contact card */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 2.1rem;
+  padding: 56px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 28px 90px rgba(0,0,0,0.3);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: end;
+}
+
+.headline {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+.body {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.72);
+  max-width: 560px;
+}
+
+.cardRight {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: rgba(5,18,24,0.46);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1.7rem;
+  padding: 24px;
+}
+
+.emailCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 28px;
+  background: var(--accent);
+  color: hsl(205, 32%, 7%);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--radius-full);
+  transition: box-shadow 0.2s, transform 0.2s var(--ease-expo);
+  width: 100%;
+}
+.emailCta:hover {
+  box-shadow: 0 0 32px rgba(var(--accent-rgb), 0.45);
+  transform: translateY(-2px);
+}
+
+.comingSoonBox {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1.3rem;
+  padding: 16px;
+}
+.comingSoonKicker {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 8px;
+}
+.comingSoonTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.comingSoonBody {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.62);
+}
+
+@media (max-width: 900px) {
+  .card { padding: 32px; }
+  .cardGrid { grid-template-columns: 1fr; }
+}

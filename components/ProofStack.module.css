@@ -1,0 +1,71 @@
+.section {
+  padding-block: 96px;
+  background: hsl(205, 28%, 8%);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.left { max-width: 480px; }
+.title {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  margin-bottom: 20px;
+}
+.body {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.68);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1.5rem;
+  padding: 24px;
+  transition: border-color 0.25s, transform 0.25s var(--ease-expo);
+}
+.card:hover {
+  border-color: rgba(var(--accent-teal-rgb), 0.35);
+  transform: translateY(-4px);
+}
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.cardCopy {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.62);
+}
+.cardLink {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+}
+.cardLink:hover { opacity: 0.75; }
+
+@media (max-width: 1024px) {
+  .layout { grid-template-columns: 1fr; }
+  .left { max-width: 100%; }
+}
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+}

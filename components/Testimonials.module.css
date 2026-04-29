@@ -1,0 +1,280 @@
+.section {
+  padding-block: 96px;
+  background: hsl(205, 30%, 8%);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── About grid ── */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: start;
+  margin-bottom: 96px;
+}
+.aboutLeft { display: flex; flex-direction: column; gap: 0; }
+.aboutTitle {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  margin-bottom: 28px;
+}
+.aboutBody {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 16px;
+}
+
+/* Mission card */
+.missionCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid rgba(215,195,141,0.16);
+  background: var(--bg-elevated);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.22);
+}
+.missionBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.missionBgImg {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.missionBgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(248,245,236,0.86), rgba(244,250,247,0.78) 42%, rgba(248,245,236,0.92));
+}
+.missionContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+}
+.missionTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.storyCard {
+  background: rgba(255,255,255,0.72);
+  border-radius: 1.4rem;
+  padding: 20px;
+}
+.storyHeading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #144445;
+  margin-bottom: 8px;
+}
+.storyCopy {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #2a4a4a;
+}
+
+.standoutCard {
+  background: rgba(255,255,255,0.74);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 1.7rem;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(20,40,44,0.08);
+}
+.standoutKicker {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(20,68,69,0.7);
+  display: block;
+  margin-bottom: 16px;
+}
+.standoutStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.statNum {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #144445;
+  margin-bottom: 4px;
+}
+.statLabel {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: #3a5a5a;
+}
+
+/* ── Authority section ── */
+.authoritySection {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 80px;
+  padding-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.authorityLeft { max-width: 480px; }
+.authorityTitle {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: 20px;
+}
+.authorityBody {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.68);
+}
+.authorityGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.authorityCard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1.4rem;
+  padding: 20px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.authorityCard:hover {
+  border-color: rgba(var(--accent-teal-rgb), 0.35);
+  transform: translateY(-3px);
+}
+.authorityCardTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-teal);
+  margin-bottom: 8px;
+}
+.authorityCardCopy {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.62);
+}
+
+/* ── ROOTS pills ── */
+.rootsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.rootsPill {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.rootsPill:hover {
+  border-color: rgba(var(--accent-rgb), 0.3);
+  transform: translateY(-3px);
+}
+.rootsLetter {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #c8a74b;
+  line-height: 1;
+  text-shadow: var(--gold-text-glow);
+}
+.rootsLabel {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.rootsDesc {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* ── Testimonials ── */
+.testimonialWrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.avatarCol { display: flex; flex-direction: column; align-items: center; }
+.avatarCard {
+  width: 180px; height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated);
+}
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.7);
+  transform-origin: 50% 0%;
+  border-radius: 16px;
+}
+
+.quoteCard {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  padding: 36px;
+}
+.stars { display: flex; gap: 4px; margin-bottom: 20px; }
+.quote {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+.attribution { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--accent-teal);
+  flex-shrink: 0;
+}
+.name { font-weight: 700; font-size: 0.9375rem; color: var(--text-primary); }
+.role { font-size: 0.8125rem; color: var(--text-muted); margin-top: 2px; }
+
+.controls { display: flex; align-items: center; gap: 16px; }
+.ctrl {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s;
+}
+.ctrl:hover { border-color: var(--accent); color: var(--accent); }
+
+.dots { display: flex; gap: 6px; flex: 1; justify-content: center; }
+.pip { width: 6px; height: 6px; border-radius: 50%; background: var(--border-strong); transition: background 0.2s, transform 0.2s; }
+.pipActive { background: var(--accent); transform: scale(1.4); box-shadow: var(--gold-dot-glow); }
+
+@media (max-width: 1024px) {
+  .aboutGrid { grid-template-columns: 1fr; }
+  .authoritySection { grid-template-columns: 1fr; }
+  .rootsGrid { grid-template-columns: repeat(3, 1fr); }
+  .testimonialWrap { grid-template-columns: 1fr; }
+  .avatarCard { display: none; }
+}
+@media (max-width: 640px) {
+  .rootsGrid { grid-template-columns: 1fr 1fr; }
+  .missionTop { grid-template-columns: 1fr; }
+  .authorityGrid { grid-template-columns: 1fr; }
+  .standoutStats { grid-template-columns: 1fr; }
+}

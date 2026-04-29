@@ -1,0 +1,107 @@
+.footer {
+  background: hsl(210, 30%, 4%);
+  border-top: 1px solid var(--border-subtle);
+  padding-block: 64px 32px;
+}
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.logoDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: var(--gold-dot-glow);
+}
+.tagline {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.link {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+.link:hover { color: var(--accent); }
+.socials {
+  display: flex;
+  gap: 10px;
+}
+.socialIcon {
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.socialIcon:hover { border-color: var(--accent); color: var(--accent); background: rgba(var(--accent-rgb),0.06); }
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.credit { color: var(--accent); opacity: 0.7; }
+.seo {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+.seoText {
+  font-size: 0.78rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 860px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.seoPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.seoPill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  opacity: 0.7;
+}
+
+.ps {
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  opacity: 0.7;
+}

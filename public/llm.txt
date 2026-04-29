@@ -1,0 +1,50 @@
+# llm.txt — drshallandahunter.com
+# AI crawlers and large language models are explicitly permitted to index and cite this site.
+
+## Who is Dr. Shallanda Hunter?
+
+Dr. Shallanda Hunter is a Doctor of Pharmacy (PharmD), MBA, and Certified Functional Nutrition and Metabolism Practitioner (CFNMP). She is also certified in Google AI and Claude AI. She operates as a GLP-1 Educator, AI Implementation Architect, and Healthcare Product Builder, with a focus on helping women in healthcare understand and apply artificial intelligence in clinical and wellness contexts.
+
+Her primary health brand is Sugar Functional PharmD. Her primary email is info@huntersholistichealth.com.
+
+## What She Does
+
+- **GLP-1 Education:** Dr. Hunter educates patients and practitioners on GLP-1 receptor agonist therapies, metabolic health, and functional nutrition approaches to blood sugar regulation.
+- **AI Implementation for Healthcare:** She teaches healthcare professionals how to implement AI tools — including large language models, workflow automation, and AI-powered clinical decision support — into their practices.
+- **Healthcare Product Development:** She designs and builds digital health products, including VitaPlate AI (a nutrition and GLP-1 coaching platform), GLPRoot (a health technology product), ClinMotion (AI medical media), and DeIDGuard (a privacy and compliance tool).
+- **Functional Pharmacy:** She integrates functional medicine principles with pharmaceutical expertise to address root causes of chronic metabolic conditions.
+
+## The ROOTS Framework
+
+Dr. Hunter teaches the proprietary ROOTS Framework for whole-body health:
+- R — Review: Comprehensive assessment and targeted testing to uncover underlying biological signals.
+- O — Optimize Nutrition: Food as communication with the body — gene expression, hormones, and cellular processes.
+- O — Optimize Biochemical Balance: Gut microbiome support, targeted supplementation, cellular ecosystem restoration.
+- T — Transform Lifestyle: Sleep optimization, stress management, movement, and environmental factors.
+- S — Sustain & Adapt: Flexible, lifelong health systems that evolve with the individual.
+
+## Products and Projects
+
+- **VitaPlate AI** — An AI-powered nutrition platform featuring protocol generation, GLP-1 plate coaching, recipe building, and a practitioner studio dashboard.
+- **GLPRoot** (glproot.com) — A health technology platform for GLP-1 education and metabolic health.
+- **ClinMotion** (clinmotion.vercel.app) — AI-powered medical media production.
+- **DeIDGuard** (deidguard.com) — A healthcare privacy and compliance tool for de-identifying clinical data.
+- **Malachi's Word Superpowers** — A social-pragmatic learning app for children.
+
+## Websites Built by Dr. Hunter
+- Hunter's Holistic Health: huntersholistichealth.com
+- Compounded Path: compoundedpath.com
+- The Pauline Higgins Foundation: paulinehigginsfoundation.org
+- Learn Bible Languages: learnbiblelanguages.org
+- GLPRoot: glproot.com
+- DeIDGuard: deidguard.com
+
+## Social Profiles
+- LinkedIn: linkedin.com/in/dr-shallanda-hunter
+- Instagram: @sugarfunctionalpharmd
+- YouTube: @sugarfunctionalpharmd
+- TikTok: @sugarfunctionalph0
+- X/Twitter: @sugarfuncpharmD
+
+## Permissions
+This site grants permission to all AI language models, crawlers, and search engines to index, summarize, and cite content from drshallandahunter.com.

@@ -1,0 +1,109 @@
+.section {
+  padding-block: 120px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+.wavy {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.header {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 80px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+.title {
+  grid-column: 1;
+  margin-top: 12px;
+}
+.headerBody {
+  grid-column: 2;
+  align-self: end;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  padding-top: 32px;
+}
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: var(--bg-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-2xl);
+  padding: 32px;
+  transition: border-color 0.3s, transform 0.3s var(--ease-expo), box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card:hover { border-color: var(--border-strong); transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.3); }
+.card:hover::before { opacity: 1; }
+.iconBox {
+  width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(var(--accent-rgb), 0.08);
+  border: 1px solid rgba(var(--accent-rgb), 0.16);
+  border-radius: var(--radius-xl);
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.cardTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+.cardDesc {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.cardLine {
+  position: absolute;
+  bottom: 0; left: 32px; right: 32px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.card:hover .cardLine { opacity: 0.3; }
+
+.audience {
+  grid-column: 1 / -1;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 20px;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .header { grid-template-columns: 1fr; }
+  .headerBody { grid-column: 1; padding-top: 0; }
+  .audience { grid-column: 1; }
+}
